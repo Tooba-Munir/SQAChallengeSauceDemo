@@ -23,10 +23,13 @@ To build and run the project using Maven, execute the following commands:
 ```bash
 mvn clean install
 mvn clean test
-mvn verify -DskipTests
+mvn verify -DskipTests       //This will skip the tests and generate the HTML reports.
 ```
 
 The Runner file is located within the Runner package and can be executed either as JUnit tests or through Maven build. Alternatively, feature files can be executed as a Cucumber feature.
+
+## Reporting of Test cases 
+Reports can be accessed under the CucumberJava/target folder.
 
 ## Following is the demo video for running this project:
 [Link](https://drive.google.com/file/d/1hRgkUdjScugQMJL3jgZDCU2RspOBLPMY/view?usp=drive_link)
