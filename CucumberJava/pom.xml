@@ -32,12 +32,7 @@
     <scope>test</scope>
 </dependency>
 
-<!-- Add these dependencies for Firefox -->
-<dependency>
-    <groupId>org.seleniumhq.selenium</groupId>
-    <artifactId>selenium-firefox-driver</artifactId>
-    <version>4.16.1</version>
-</dependency>
+
 
 <dependency>
     <groupId>io.github.bonigarcia</groupId>
@@ -46,12 +41,7 @@
 </dependency>
 
 
-<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-firefox-driver -->
-<dependency>
-    <groupId>org.seleniumhq.selenium</groupId>
-    <artifactId>selenium-firefox-driver</artifactId>
-    <version>4.16.1</version>
-</dependency>
+
 
 
 <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
