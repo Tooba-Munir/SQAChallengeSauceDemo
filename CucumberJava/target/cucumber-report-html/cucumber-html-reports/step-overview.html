@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/reporting.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber-JVM Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-JVM Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="step-overview.html">Steps</a></li>
+        <li role="presentation" ><a href="failures-overview.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>CucumberWebGui</td>
+                          <td>1</td>
+                        <td>24 Dec 2023, 18:37</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="report-lead" class="container-fluid>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Steps Statistics</h2>
+              <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+          </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+              <table id="tablesorter" class="stats-table table-hover">
+
+          <thead>
+            <tr class="header">
+              <th>Implementation</th>
+              <th>Occurrences</th>
+              <th>Duration</th>
+              <th>Average</th>
+              <th>Ratio</th>
+            </tr>
+          </thead>
+
+          <tbody>
+                          <tr>
+                <td class="location">stepDefinitions.checkoutSteps.setUp()</td>
+                <td>8</td>
+                <td class="duration" data-value="8130867">008ms</td>
+                <td class="duration" data-value="1016358">001ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.checkoutSteps.user_can_see_the_product_details_added_in_cart()</td>
+                <td>1</td>
+                <td class="duration" data-value="68231639">068ms</td>
+                <td class="duration" data-value="68231639">068ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.checkoutSteps.user_clicks_on_cart_icon_after_adding_the_product_to_cart()</td>
+                <td>1</td>
+                <td class="duration" data-value="368608269">368ms</td>
+                <td class="duration" data-value="368608269">368ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.checkoutSteps.user_clicks_on_checkout_button()</td>
+                <td>1</td>
+                <td class="duration" data-value="245365004">245ms</td>
+                <td class="duration" data-value="245365004">245ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.checkoutSteps.user_should_be_able_to_complete_checkout_informarion()</td>
+                <td>1</td>
+                <td class="duration" data-value="1214539456">1s 214ms</td>
+                <td class="duration" data-value="1214539456">1s 214ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.checkoutSteps.user_should_sees_a_success_prompt_after_successful_checkout()</td>
+                <td>1</td>
+                <td class="duration" data-value="146524823">146ms</td>
+                <td class="duration" data-value="146524823">146ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.homePageSteps.product_list_should_be_sorted_in_descending_order()</td>
+                <td>1</td>
+                <td class="duration" data-value="265380967">265ms</td>
+                <td class="duration" data-value="265380967">265ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.homePageSteps.remove_from_cart_button_for_the_product_should_be_changed_into_add_to_cart()</td>
+                <td>1</td>
+                <td class="duration" data-value="82985585">082ms</td>
+                <td class="duration" data-value="82985585">082ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.homePageSteps.selects_a_z_a_name_filter_from_dropdown()</td>
+                <td>1</td>
+                <td class="duration" data-value="2195798866">2s 195ms</td>
+                <td class="duration" data-value="2195798866">2s 195ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.homePageSteps.setUp()</td>
+                <td>8</td>
+                <td class="duration" data-value="28520921661">28s 520ms</td>
+                <td class="duration" data-value="3565115207">3s 565ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.homePageSteps.teardown()</td>
+                <td>8</td>
+                <td class="duration" data-value="448235">000ms</td>
+                <td class="duration" data-value="56029">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.homePageSteps.the_cart_badge_counter_should_be_updated()</td>
+                <td>2</td>
+                <td class="duration" data-value="158236150">158ms</td>
+                <td class="duration" data-value="79118075">079ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.homePageSteps.the_cart_should_be_updated()</td>
+                <td>1</td>
+                <td class="duration" data-value="809960">000ms</td>
+                <td class="duration" data-value="809960">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.homePageSteps.the_user_should_see_a_list_of_products()</td>
+                <td>2</td>
+                <td class="duration" data-value="315845193">315ms</td>
+                <td class="duration" data-value="157922596">157ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.homePageSteps.user_clicks_on_filter_options()</td>
+                <td>1</td>
+                <td class="duration" data-value="190154699">190ms</td>
+                <td class="duration" data-value="190154699">190ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.homePageSteps.user_clicks_on_remove_from_cart_button()</td>
+                <td>1</td>
+                <td class="duration" data-value="146625588">146ms</td>
+                <td class="duration" data-value="146625588">146ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.homePageSteps.user_has_added_a_product_to_the_cart()</td>
+                <td>1</td>
+                <td class="duration" data-value="155791952">155ms</td>
+                <td class="duration" data-value="155791952">155ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.homePageSteps.user_is_on_homepage()</td>
+                <td>6</td>
+                <td class="duration" data-value="12140321745">12s 140ms</td>
+                <td class="duration" data-value="2023386957">2s 023ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.homePageSteps.user_is_viewing_the_product_section()</td>
+                <td>5</td>
+                <td class="duration" data-value="475142648">475ms</td>
+                <td class="duration" data-value="95028529">095ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.homePageSteps.user_selects_a_product_and_clicks_on_add_to_cart_button()</td>
+                <td>2</td>
+                <td class="duration" data-value="353554272">353ms</td>
+                <td class="duration" data-value="176777136">176ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.homePageSteps.user_should_be_able_to_click_on_the_product_name()</td>
+                <td>1</td>
+                <td class="duration" data-value="160291548">160ms</td>
+                <td class="duration" data-value="160291548">160ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.loginSteps.setUp()</td>
+                <td>8</td>
+                <td class="duration" data-value="3667204">003ms</td>
+                <td class="duration" data-value="458400">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.loginSteps.teardown()</td>
+                <td>8</td>
+                <td class="duration" data-value="1608517565">1s 608ms</td>
+                <td class="duration" data-value="201064695">201ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.loginSteps.user_clicks_on_login_button()</td>
+                <td>8</td>
+                <td class="duration" data-value="2533051291">2s 533ms</td>
+                <td class="duration" data-value="316631411">316ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.loginSteps.user_enters_blocked_username_and_password(java.lang.String,java.lang.String)</td>
+                <td>1</td>
+                <td class="duration" data-value="713642922">713ms</td>
+                <td class="duration" data-value="713642922">713ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.loginSteps.user_enters_valid_username_and_valid_password(java.lang.String,java.lang.String)</td>
+                <td>7</td>
+                <td class="duration" data-value="4669659139">4s 669ms</td>
+                <td class="duration" data-value="667094162">667ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.loginSteps.user_is_navigated_to_homepage()</td>
+                <td>1</td>
+                <td class="duration" data-value="2341934175">2s 341ms</td>
+                <td class="duration" data-value="2341934175">2s 341ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.loginSteps.user_is_on_login_page()</td>
+                <td>8</td>
+                <td class="duration" data-value="12821958708">12s 821ms</td>
+                <td class="duration" data-value="1602744838">1s 602ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.loginSteps.user_sees_error_message_and_is_not_logged_in()</td>
+                <td>1</td>
+                <td class="duration" data-value="195189933">195ms</td>
+                <td class="duration" data-value="195189933">195ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.logoutSteps.setUp()</td>
+                <td>8</td>
+                <td class="duration" data-value="8264169">008ms</td>
+                <td class="duration" data-value="1033021">001ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.logoutSteps.tearDown()</td>
+                <td>8</td>
+                <td class="duration" data-value="780543">000ms</td>
+                <td class="duration" data-value="97567">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.logoutSteps.user_clicks_on_logout_option()</td>
+                <td>1</td>
+                <td class="duration" data-value="194398288">194ms</td>
+                <td class="duration" data-value="194398288">194ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.logoutSteps.user_clicks_on_menu_button()</td>
+                <td>1</td>
+                <td class="duration" data-value="277388609">277ms</td>
+                <td class="duration" data-value="277388609">277ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinitions.logoutSteps.user_should_be_logged_out_and_redirected_to_login_page()</td>
+                <td>1</td>
+                <td class="duration" data-value="108078">000ms</td>
+                <td class="duration" data-value="108078">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                      </tbody>
+
+          <tfoot class="total">
+            <tr>
+              <td>34</td>
+              <td>115</td>
+              <td class="duration">1m 12s 582ms</td>
+              <td class="duration">631ms</td>
+              <td>Totals</td>
+            </tr>
+          </tfoot>
+
+        </table>
+          </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+stepDefinitions/homePageSteps.class
+stepDefinitions/logoutSteps.class
+pages/HomePage.class
+pages/LogOutPage.class
+stepDefinitions/checkoutSteps.class
+stepDefinitions/loginSteps.class
+pages/CheckoutPage.class
+Handler/DriverManager.class
+pages/LoginPage.class
+Runner/TestRunner.class
