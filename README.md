@@ -1,4 +1,4 @@
-# SQA Challenge - Small World - Sauce Lab Demo Automation Project
+# SQA Challenge - Sauce Lab Demo Automation Project with Selenium and Java
 
 This directory contains a Java Selenium test automation project based on the Cucumber BDD framework. Each test case is organized in a separate feature file, [Link](https://github.com/Tooba-Munir/SQAChallengeSmallWorld/tree/main/CucumberJava/src/test/resources/Features).
 
